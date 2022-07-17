@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         .header {
             display: flex;
             justify-content: space-between;
@@ -15,9 +14,11 @@
             background-color: pink;
             padding: 0px 15px;
         }
+
         .header img {
             border-radius: 5px;
         }
+
         .header a {
             text-decoration: none;
             color: black;
@@ -83,6 +84,30 @@
 
         label {
             margin-left: 3px;
+        }
+
+        .footer {
+            height: 80px;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 20px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .imgMainDiv {
+                flex-direction: column;
+            }
+            .imgDiv {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .formGeneral {
+                margin: 0px;
+            }
+
         }
     </style>
 </head>
@@ -161,6 +186,11 @@
         </select>
         <input type="submit" class="formSubmit" value="Kaydet">
     </form>
+
+
+    <div class="footer">
+        <h4><i class="fa fa-copyright" aria-hidden="true">Tüm Hakları Saklıdır</i></h4>
+    </div>
 
 </body>
 
