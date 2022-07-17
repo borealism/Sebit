@@ -37,16 +37,18 @@
         }
 
         .imgDiv {
-            border: 1px solid black;
+            border: 1px dashed black;
             width: 200px;
             border-radius: 30px;
             margin-right: 30px;
         }
 
         .btn {
-            margin-left: 23%;
-            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
         }
+
         .imgDiv button {
             border-radius: 30px;
             background-color: green;
@@ -76,10 +78,10 @@
         }
 
         .footer {
-            height: 200px;
-            background-color: lightcoral;
+            height: 160px;
+            background-color: rgb(238, 91, 34);
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             color: white;
             margin-top: 20px;
@@ -89,25 +91,47 @@
         .footer img {
             height: 120px;
         }
+
         .footer a {
             text-decoration: none;
             color: black;
         }
 
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
         @media only screen and (max-width: 600px) {
+            body {
+                margin: 0px 15px;
+                max-width: 100%;
+                overflow-x:auto;
+            }
+
             .imgMainDiv {
                 flex-direction: column;
+                margin-bottom: 0px;
             }
 
             .imgDiv {
                 width: 100%;
                 margin-bottom: 30px;
+                margin-right: 0px;
+            }
+            
+            .imgDiv p {
+                text-align: center;
             }
 
-            .formGeneral {
-                margin: 0px;
+            .footer {
+                padding: 0px;
+                max-height: fit-content;
+                max-width: fit-content;
             }
-
         }
     </style>
 </head>
@@ -220,18 +244,34 @@
 
 
     <div class="footer">
-        <div>
-            <a href="">Anasayfa</a> <br>
-            <a href="">Hakkımızda</a> <br>
-            <a href="">İletişim</a>
+        <div class="footer-left">
+            <ul>
+                <li>
+                    <a href="">Anasayfa</a> <br>
+                </li>
+                <li>
+                    <a href="">Hakkımızda</a> <br>
+                </li>
+                <li>
+                    <a href="">İletişim</a>
+                </li>
+            </ul>
         </div>
         <div>
             <img src="burgerlogo.png" alt="">
         </div>
-        <div>
-            <a href="">Burgerler</a> <br>
-            <a href="">Restorantlar</a> <br>
-            <a href="">Kariyer</a>
+        <div class="footer-right">
+            <ul>
+                <li>
+                    <a href="">Burgerler</a>
+                </li>
+                <li>
+                    <a href="">Restorantlar</a>
+                </li>
+                <li>
+                    <a href="">Kariyer</a>
+                </li>
+            </ul>
         </div>
     </div>
 
