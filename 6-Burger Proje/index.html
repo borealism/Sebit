@@ -26,6 +26,19 @@
             margin-right: 13px;
         }
 
+        .banner {
+            background-image: url('banner.jpg');
+            height: 400px;
+            position: relative;
+        }
+
+        .bannerDiv {
+            position: absolute;
+            top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+
         .imgMainDiv {
             display: flex;
             justify-content: center;
@@ -114,6 +127,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 place-items: center;
             }
+
             .imgDiv {
                 margin-bottom: 30px;
             }
@@ -130,7 +144,7 @@
                 margin-bottom: 30px;
                 margin-right: 0px;
             }
-            
+
             .imgDiv p {
                 text-align: center;
             }
@@ -138,11 +152,12 @@
             .footer {
                 padding: 0px;
             }
-            
+
             .footer img {
                 height: 80px;
             }
-            .footer-right ul{
+
+            .footer-right ul {
                 padding-left: 0px;
             }
         }
@@ -165,12 +180,8 @@
 
 
 
-    <div style="background-image: url('banner.jpg'); height: 400px;
-    position: relative;">
-        <div style="position: absolute;
-        top: 50px;
-        text-align: center;
-        width: 100%;">
+    <div class="banner">
+        <div class="bannerDiv">
             <h3>Efsane Banner</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, quis at? Ea quia dolorem excepturi
                 repellat, similique perferendis reprehenderit ipsam sit vel accusamus non, aspernatur dignissimos
