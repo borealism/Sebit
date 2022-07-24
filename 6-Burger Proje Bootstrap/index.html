@@ -119,18 +119,55 @@
         .footerList li {
             margin-top: 10px;
         }
+
+        .mobileIcon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .mobileIcon {
+                display: block;
+            }
+
+            .headerImgDiv {
+                display: none;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+
+            .mobileLinks {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navDiv {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div>
+        <div class="mobileIcon" onclick="toggle()">
+            <img src="icon.jpg" alt="" height="50px">
+        </div>
+
+        <div class="headerImgDiv">
             <img src="burgerlogo.png" alt="" height="50px">
         </div>
-        <div>
-            <a class="headerLink" href="">Home</a>
-            <a class="headerLink" href="">About</a>
-            <a class="headerLink" href="">Contact</a>
+        
+        <div class="navDiv">
+            <div class="mobileLinks">
+                <a class="headerLink" href="">Home</a>
+                <a class="headerLink" href="">About</a>
+                <a class="headerLink" href="">Contact</a>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -265,7 +302,17 @@
         </div>
     </div>
     </div>
+    <script>
+        function toggle() {
+            let x = document.querySelector('.navDiv');
 
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
