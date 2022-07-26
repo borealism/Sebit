@@ -30,22 +30,32 @@ body {
 }
 
 .headerDiv {
+  position: relative;
+}
+.headerText {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: larger;
+  color: wheat;
+}
+.headerDiv img {
+    height: 450px;
+}
+
+.container img {
+  height: 300px;
+}
+
+.footerDiv {
     display: flex;
     justify-content: center;
 }
-.headerDiv img {
-    height: 500px;
+.footerDiv img {
+    height: 200px;
     border-radius: 500px;
     opacity: 40%;
     margin-top: 20px;
 }
 
-.footerDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footerDiv img {
-  height: 150px;
-  border-radius: 80px;
-}
