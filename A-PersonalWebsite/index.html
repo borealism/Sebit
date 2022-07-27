@@ -41,8 +41,7 @@
         <!-- Gallery -->
         <div class="row mt-4">
             <div class="col-lg-4 col-md-12 mb-s mb-lg-0">
-                <img src="camping1.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="camping1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
@@ -52,41 +51,78 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
 
-                <img src="camping3.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="camping3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="camping6.jpg"
-                    class="w-100 shadow-1-strong rounded mb-4" alt="" />
+                <img src="camping6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
 
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
             </div>
         </div>
         <!-- Gallery -->
-        
-        <div class="footer">
-            <div class="footerDiv">
-                <ul class="footerList">
-                    <li><a href="">Anasayfa</a></li>
-                    <li><a href="">Hakkımızda</a></li>
-                    <li><a href="">İletişim</a></li>
-                </ul>
-            </div>
-            <div class="footerDiv">
-                <img src="sapkaphotoAid-removed-background-removebg-preview.png" height="80px" alt="">
-            </div>
-            <div class="footerDiv">
-                <ul class="footerList">
-                    <li><a href="">Burgerler</a></li>
-                    <li><a href="">Restoranlar</a></li>
-                    <li><a href="">Kariyer</a></li>
-                </ul>
+
+        <div class="row">
+            <form class="formGeneral">
+                <label for="">Name</label>
+                <input class="formElement" type="text" name="firstName" placeholder="Input your name.." id="">
+                <label for="">Surname</label>
+                <input class="formElement" type="text" name="lastName" placeholder="Input your surname.." id="">
+                <label for="">Location</label>
+                <select name="country" id="">
+                    <option value="tr">Türkiye</option>
+                    <option value="fr">Français</option>
+                    <option value="en">England</option>
+                </select>
+                <input class="formSubmit" type="submit" value="Kaydet">
+            </form>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footerDiv">
+            <ul class="footerList">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerDiv" id="footerImg">
+            <img src="sapkaphotoAid-removed-background-removebg-preview.png" height="80px" alt="">
+
+            <div class="footerIcons">
+                <a href="https://twitter.com/TuncalBurak/">
+                    <svg width="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM23.2812 19.5075L23.3316 20.338L22.4922 20.2363C19.4369 19.8465 16.7677 18.5245 14.5013 16.3043L13.3934 15.2027L13.108 16.0162C12.5036 17.8296 12.8897 19.7448 14.1488 21.0328C14.8203 21.7446 14.6692 21.8463 13.5109 21.4226C13.108 21.287 12.7554 21.1854 12.7219 21.2362C12.6044 21.3548 13.0073 22.8971 13.3262 23.5072C13.7627 24.3546 14.6524 25.1851 15.6261 25.6766L16.4487 26.0664L15.475 26.0833C14.5349 26.0833 14.5013 26.1003 14.6021 26.4562C14.9378 27.5578 16.264 28.7272 17.7413 29.2357L18.7822 29.5916L17.8756 30.1339C16.5326 30.9135 14.9546 31.3542 13.3766 31.3881C12.6211 31.405 12 31.4728 12 31.5237C12 31.6931 14.0481 32.6422 15.24 33.0151C18.8157 34.1167 23.063 33.6422 26.2526 31.7609C28.5189 30.422 30.7852 27.7612 31.8428 25.1851C32.4136 23.8123 32.9844 21.304 32.9844 20.1007C32.9844 19.3211 33.0347 19.2194 33.9748 18.2872C34.5288 17.7449 35.0492 17.1517 35.15 16.9822C35.3178 16.6602 35.3011 16.6602 34.4449 16.9483C33.018 17.4568 32.8165 17.389 33.5216 16.6263C34.042 16.084 34.6631 15.101 34.6631 14.8129C34.6631 14.762 34.4113 14.8468 34.1259 14.9993C33.8238 15.1688 33.1523 15.423 32.6486 15.5756L31.7421 15.8637L30.9195 15.3044C30.4663 14.9993 29.8283 14.6604 29.4926 14.5587C28.6364 14.3214 27.327 14.3553 26.5548 14.6265C24.4563 15.3891 23.1301 17.3551 23.2812 19.5075Z"
+                            fill="white" />
+                    </svg>
+                </a>
+                <a href="https://github.com/borealism/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 16" width="45">
+                        <path fill-rule="evenodd"
+                            d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/tuncalburak/">
+                    <svg width="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z"
+                            fill="white" />
+                    </svg>
+                </a>
             </div>
         </div>
+        <div class="footerDiv">
+            <ul class="footerList">
+                <li><a href="">Camp Locations</a></li>
+                <li><a href="">Walking Tracks</a></li>
+                <li><a href="">Hiking Trails</a></li>
+            </ul>
+        </div>
     </div>
-
 
     <div>
 
