@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
   background-color: rgb(44, 44, 44) !important;
 }
+.navbar {
+  background: #2e102a;
+}
+
 .navbarDiv {
   background: #2e102a;
   padding: 10px 0;
@@ -39,6 +43,49 @@ body {
   width: 100%;
 }
 
+#secondFormEle {
+  margin-bottom: 20px;
+}
+
+.formElement {
+  width: 100%;
+  padding: 13px;
+  background-color: #a48c89;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+
+.formElement:focus {
+  background-color: #fbbb93;
+}
+
+.formSubmit {
+  padding: 10px 30px;
+  margin-left: 20px;
+  background-color: #fbbb93;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.formGeneral {
+  background-color: rgb(73, 70, 70);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.selection {
+  font-family: "Abril Fatface", cursive;
+}
+
+label {
+  margin-left: 3px;
+  color: bisque;
+  font-family: "Abril Fatface", cursive;
+}
+
+
 .footer {
   display: flex;
   justify-content:space-evenly;
@@ -55,7 +102,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 #footerImg>img{
   height: 200px;
   border-radius: 500px;
@@ -65,6 +111,9 @@ body {
 }
 .footerIcons {
   margin-bottom: 5px;
+}
+.footerIcons a {
+  text-decoration: none;
 }
 
 #footerImg svg{
