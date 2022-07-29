@@ -3,10 +3,16 @@ body {
   overflow-x: hidden;
   background-color: rgb(44, 44, 44) !important;
 }
-.navbar {
-  background: #2e102a;
-}
 
+.navbar {
+  background-color: #2e102a;
+}
+.nav-link, .navbar-brand {
+  color: #ffbe94 !important;
+}
+.navbar-toggler-icon {
+  color: wheat;
+}
 .navbarDiv {
   background: #2e102a;
   padding: 10px 0;
@@ -34,7 +40,7 @@ body {
   position: absolute;
   bottom: 25px;
   left: 50px;
-  font-family: "Lobster", cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: larger;
   color: wheat;
 }
@@ -133,3 +139,4 @@ label {
   color: white;
   font-family: "Abril Fatface", cursive;
 }
+
