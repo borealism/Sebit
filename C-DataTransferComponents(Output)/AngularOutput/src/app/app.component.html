@@ -1,0 +1,7 @@
+<div>
+  <h3>Parent</h3>
+  <app-child-component (newItemEvent)="addItem($event)"></app-child-component>
+  <ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>
+</div>
