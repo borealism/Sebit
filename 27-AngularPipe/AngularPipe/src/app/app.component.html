@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>İsim</label>
+        <input class="form-control" type="text" (input)="onNameChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>İsim</b></label>
+      <div>
+        <!-- {{name | titlecase}} -->
+        <!-- {{name | uppercase}} -->
+        {{name | lowercase}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tarih</label>
+        <input class="form-control" type="date" (input)="onDateChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tarih</b></label>
+      <div>
+        <!-- {{name | titlecase}} -->
+        <!-- {{name | uppercase}} -->
+        {{date | date: 'longDate'}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tutar</label>
+        <input class="form-control" type="text" (input)="onMoneyChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tutar</b></label>
+      <div>
+        <!-- {{name | titlecase}} -->
+        <!-- {{name | uppercase}} -->
+        {{money | currency: 'TuncalCoin'}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Boy</label>
+        <input class="form-control" type="text" (input)="onHeightChange($event.target.value)">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Boy</b></label>
+      <div>
+        <!-- {{name | titlecase}} -->
+        <!-- {{name | uppercase}} -->
+        {{height | number : '1.1-4'}}
+      </div>
+    </div>
+  </div>
+</div>
