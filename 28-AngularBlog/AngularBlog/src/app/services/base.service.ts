@@ -2,9 +2,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 
+
+
 @Injectable()
-
-
 export class BaseService {
   public baseUrl = 'http://localhost:3000';
 
@@ -20,6 +20,8 @@ export class BaseService {
       }),
     });
   }
+
+
   postReq(url: any, data: any) {
     return this.http.post<any>(this.baseUrlUpdate(url), data, {
       headers: new HttpHeaders({
@@ -28,6 +30,7 @@ export class BaseService {
       }),
     });
   }
+
   putReq(url: any, data: any) {
     return this.http.put<any>(this.baseUrlUpdate(url), data, {
       headers: new HttpHeaders({
@@ -36,16 +39,10 @@ export class BaseService {
       }),
     });
   }
+
+
   baseUrlUpdate(url: string): string {
     return (url.startsWith('/')) ? this.baseUrl + url : url;
   }
-}
 
-
-
-
-
-
-
-
-
+  }
