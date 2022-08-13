@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BlogService } from '../services/blog.service';
+import { CommentService } from '../services/comment.service';
 import { MatDialog } from '@angular/material/dialog';
 import { BlogDialogComponent } from './blog-dialog/blog-dialog.component';
 
@@ -20,7 +21,9 @@ export class HomeComponent implements OnInit {
   pageSize = 8;
   page = 13;
   blogData: Array<any> = [];
-  constructor(private blogService: BlogService, public dialog: MatDialog) {}
+  commentData: Array<any> = [];
+
+  constructor(private blogService: BlogService, private commentService: CommentService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getBlogList();
@@ -39,5 +42,10 @@ export class HomeComponent implements OnInit {
     this.blogService.getPosts().subscribe((res) => {
       this.blogData = res;
     });
+  }
+  getCommentList() {
+    this.commentService.getComments().subscribe((res) => {
+      this.commentData = res;
+    })
   }
 }

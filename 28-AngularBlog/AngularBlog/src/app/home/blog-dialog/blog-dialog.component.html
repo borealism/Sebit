@@ -45,6 +45,13 @@
       <p>{{content}}</p>
     </div>
   </div>
-
-
+  <div class="row my-3 commentRow" *ngFor="let comment of commentData">
+    <div class="col-lg-2 d-flex align-items-center">
+      <img class="commentImg" src="assets/images/profile/profile{{comment.userId}}.jpg">
+    </div>
+    <div class="col-lg-10">
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.body}}</p>
+    </div>
+  </div>
 </div>

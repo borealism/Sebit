@@ -12,8 +12,4 @@ export class CommentService extends BaseService {
    public getComments() {
     return this.base.getReq('/comments')
    }
-
-   public updateComment(id: any, data: any) {
-    return this.base.putReq('/comments/' + id, data);
-   }
 }
