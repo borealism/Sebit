@@ -7,7 +7,7 @@
 </div>
 
 
-<form [formGroup]="form" *ngIf="isUpdate">
+<form [formGroup]="form" *ngIf="isUpdate" style="min-width: 500px;">
   <div class="container">
     <div class="row">
       <mat-form-field>
@@ -34,3 +34,17 @@
     <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="onSubmit()">Güncelle</button>
   </div>
 </form>
+
+<div *ngIf="!isUpdate" class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src="assets/images/image{{imageUrl}}.jpg" class="w-100">
+    </div>
+    <div class="col-lg-6">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
+    </div>
+  </div>
+
+
+</div>
