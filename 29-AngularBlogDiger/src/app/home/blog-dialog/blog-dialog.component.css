@@ -1,0 +1,17 @@
+::ng-deep .mat-dialog-container {
+  height: auto;
+}
+.commentImg {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.w-100 {
+  border-radius: 5px;
+}
+
+.commentRow {
+  padding: 20px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}

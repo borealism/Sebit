@@ -1,0 +1,20 @@
+<div class="container pb-3">
+  <div class="row my-4">
+    <div class="col-lg-6 p-0">
+      <img src="assets/images/image{{blogObj.imageId}}.jpg" class="w-100" *ngIf="blogObj.imageId != null">
+    </div>
+    <div class="col-lg-6 titleContent">
+      <h2>{{blogObj.title}}</h2>
+      <p>{{blogObj.body}}</p>
+    </div>
+  </div>
+  <div class="row my-3 commentRow" *ngFor="let comment of commentData">
+    <div class="col-lg-2 d-flex align-items-center">
+      <img class="commentImg" src="assets/images/profile/profile{{comment.userId}}.jpg">
+    </div>
+    <div class="col-lg-10">
+      <h3>{{comment.name}}</h3>
+      <p>{{comment.body}}</p>
+    </div>
+  </div>
+</div>
