@@ -1,0 +1,42 @@
+{
+  "articles": [
+    {
+      "author": "burak",
+      "title": "denemeBaslik",
+      "content": "denemeAdasdAdas",
+      "comments": [
+        {
+          "username": "asd",
+          "comments": "kkqqs"
+        },
+        {
+          "username": "asd",
+          "comments": "asddd"
+        },
+        {
+          "username": "weagfaf",
+          "comments": "ı7tudje5"
+        },
+        {
+          "username": "ne",
+          "comments": "dedin"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "author": "temz",
+      "title": "22",
+      "content": "denem2",
+      "comments": [],
+      "id": 2
+    },
+    {
+      "author": "burak",
+      "title": "asda",
+      "content": "asdasd",
+      "comments": [],
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.divCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.mat-card {
+  width: 50%;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+.userCommentDiv {
+  margin-top: 25px;
+}
